@@ -13,9 +13,9 @@
 	</prerequisites>
 
 	<properties>
-		<spring.integration.version>2.2.0.RELEASE</spring.integration.version>
-		<spring.version>3.1.3.RELEASE</spring.version>
-		<spring.security.version>3.1.3.RELEASE</spring.security.version>
+		<spring.integration.version>4.0.4.RELEASE</spring.integration.version>
+		<spring.version>3.2.9.RELEASE</spring.version>
+		<spring.security.version>3.2.7.RELEASE</spring.security.version>
 		<commons-fileupload>1.2</commons-fileupload>
 		<commons-io>1.3.2</commons-io>
 		<log4j.version>1.2.17</log4j.version>
@@ -158,12 +158,9 @@
 								<echo>Copying jaxb.index to classes folder</echo>
 							</target>
 							<target>
-								<copy
-									todir="${project.basedir}/target/classes/org/springframework/integration/samples/rest/domain"
-									overwrite="true">
-									<fileset
-										dir="${project.basedir}/src/main/java/org/springframework/integration/samples/rest/domain">
-										<include name="**/jaxb.index" />
+								<copy todir="${project.basedir}/target/classes/org/springframework/integration/samples/rest/domain" overwrite="true">
+									<fileset dir="${project.basedir}/src/main/java/org/springframework/integration/samples/rest/domain">
+										<include name="**/jaxb.index"/>
 									</fileset>
 								</copy>
 							</target>
